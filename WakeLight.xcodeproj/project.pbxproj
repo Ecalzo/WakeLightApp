@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0000019001 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000019000 /* ToastView.swift */; };
+		A000001A001 /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000001A000 /* ErrorBanner.swift */; };
+		A0000001001 /* WakeLightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000001000 /* WakeLightApp.swift */; };
+		A0000002001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000002000 /* ContentView.swift */; };
+		A0000003001 /* LightControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000003000 /* LightControlView.swift */; };
+		A0000004001 /* AlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000004000 /* AlarmsView.swift */; };
+		A0000005001 /* AlarmEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000005000 /* AlarmEditView.swift */; };
+		A0000006001 /* SensorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000006000 /* SensorsView.swift */; };
+		A0000007001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000007000 /* SettingsView.swift */; };
+		A0000008001 /* WakeLightDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000008000 /* WakeLightDevice.swift */; };
+		A0000009001 /* LightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000009000 /* LightState.swift */; };
+		A000000A001 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000000A000 /* Alarm.swift */; };
+		A000000B001 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000000B000 /* SensorData.swift */; };
+		A000000C001 /* WakeLightAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000000C000 /* WakeLightAPI.swift */; };
+		A000000D001 /* DeviceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000000D000 /* DeviceDiscovery.swift */; };
+		A000000E001 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000000E000 /* AppState.swift */; };
+		A000000F001 /* WakeLightIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000000F000 /* WakeLightIntents.swift */; };
+		A0000010001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0000010000 /* Assets.xcassets */; };
+		A0000015001 /* SunsetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000015000 /* SunsetState.swift */; };
+		A0000016001 /* SunsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000016000 /* SunsetView.swift */; };
+		A0000017001 /* PhoneConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000017000 /* PhoneConnectivityManager.swift */; };
+		A0000018001 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000003000 /* Theme.swift */; };
+		B0000001001 /* WakeLightWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000001000 /* WakeLightWidgets.swift */; };
+		B0000002001 /* LightToggleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000002000 /* LightToggleWidget.swift */; };
+		B0000003001 /* NextAlarmWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000003000 /* NextAlarmWidget.swift */; };
+		B0000004001 /* SensorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000004000 /* SensorWidget.swift */; };
+		B0000005001 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000001000 /* SharedModels.swift */; };
+		B0000006001 /* SharedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000002000 /* SharedAPI.swift */; };
+		B0000008001 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000003000 /* Theme.swift */; };
+		B0000007001 /* WakeLightWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B0000000000 /* WakeLightWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0000001001 /* WakeLightWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000001000 /* WakeLightWatchApp.swift */; };
+		D0000002001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000002000 /* ContentView.swift */; };
+		D0000003001 /* SunsetWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000003000 /* SunsetWatchView.swift */; };
+		D0000004001 /* LightWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000004000 /* LightWatchView.swift */; };
+		D0000005001 /* SensorsWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000005000 /* SensorsWatchView.swift */; };
+		D0000006001 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000001000 /* SharedModels.swift */; };
+		D0000007001 /* SharedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000002000 /* SharedAPI.swift */; };
+		D0000007002 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0000003000 /* Theme.swift */; };
+		D0000008001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0000008000 /* Assets.xcassets */; };
+		D0000009001 /* WakeLightWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D0000000000 /* WakeLightWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0000008000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B00000F0000;
+			remoteInfo = WakeLightWidgetsExtension;
+		};
+		D000000A000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00000F0000;
+			remoteInfo = WakeLightWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0000020000 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B0000007001 /* SomneoWidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0000021000 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D0000009001 /* WakeLightWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A0000001000 /* WakeLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeLightApp.swift; sourceTree = "<group>"; };
+		A0000002000 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0000003000 /* LightControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightControlView.swift; sourceTree = "<group>"; };
+		A0000004000 /* AlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsView.swift; sourceTree = "<group>"; };
+		A0000005000 /* AlarmEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEditView.swift; sourceTree = "<group>"; };
+		A0000006000 /* SensorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsView.swift; sourceTree = "<group>"; };
+		A0000007000 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A0000008000 /* WakeLightDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeLightDevice.swift; sourceTree = "<group>"; };
+		A0000009000 /* LightState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightState.swift; sourceTree = "<group>"; };
+		A000000A000 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		A000000B000 /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
+		A000000C000 /* WakeLightAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeLightAPI.swift; sourceTree = "<group>"; };
+		A000000D000 /* DeviceDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDiscovery.swift; sourceTree = "<group>"; };
+		A000000E000 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A000000F000 /* WakeLightIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeLightIntents.swift; sourceTree = "<group>"; };
+		A0000010000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0000011000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0000012000 /* WakeLight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WakeLight.entitlements; sourceTree = "<group>"; };
+		A00000F0000 /* WakeLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0000000000 /* WakeLightWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WakeLightWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0000001000 /* WakeLightWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeLightWidgets.swift; sourceTree = "<group>"; };
+		B0000002000 /* LightToggleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightToggleWidget.swift; sourceTree = "<group>"; };
+		B0000003000 /* NextAlarmWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAlarmWidget.swift; sourceTree = "<group>"; };
+		B0000004000 /* SensorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorWidget.swift; sourceTree = "<group>"; };
+		B0000010000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0000011000 /* WakeLightWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WakeLightWidgets.entitlements; sourceTree = "<group>"; };
+		C0000001000 /* SharedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModels.swift; sourceTree = "<group>"; };
+		C0000002000 /* SharedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAPI.swift; sourceTree = "<group>"; };
+		C0000003000 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A0000015000 /* SunsetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunsetState.swift; sourceTree = "<group>"; };
+		A0000016000 /* SunsetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunsetView.swift; sourceTree = "<group>"; };
+		A0000017000 /* PhoneConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnectivityManager.swift; sourceTree = "<group>"; };
+		A0000019000 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		A000001A000 /* ErrorBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
+		D0000000000 /* WakeLightWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeLightWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0000001000 /* WakeLightWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeLightWatchApp.swift; sourceTree = "<group>"; };
+		D0000002000 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D0000003000 /* SunsetWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunsetWatchView.swift; sourceTree = "<group>"; };
+		D0000004000 /* LightWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightWatchView.swift; sourceTree = "<group>"; };
+		D0000005000 /* SensorsWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsWatchView.swift; sourceTree = "<group>"; };
+		D0000008000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0000010000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0000011000 /* WakeLightWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WakeLightWatch.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0000030000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0000030000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0000030000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0000000001 = {
+			isa = PBXGroup;
+			children = (
+				A0000100000 /* WakeLight */,
+				B0000100000 /* WakeLightWidgets */,
+				D0000100000 /* WakeLightWatch */,
+				C0000100000 /* Shared */,
+				A0000200000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0000100000 /* WakeLight */ = {
+			isa = PBXGroup;
+			children = (
+				A0000001000 /* WakeLightApp.swift */,
+				A0000101000 /* Models */,
+				A0000102000 /* Services */,
+				A0000103000 /* Views */,
+				A0000104000 /* Intents */,
+				A0000010000 /* Assets.xcassets */,
+				A0000011000 /* Info.plist */,
+				A0000012000 /* WakeLight.entitlements */,
+			);
+			path = WakeLight;
+			sourceTree = "<group>";
+		};
+		A0000101000 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0000008000 /* WakeLightDevice.swift */,
+				A0000009000 /* LightState.swift */,
+				A000000A000 /* Alarm.swift */,
+				A000000B000 /* SensorData.swift */,
+				A0000015000 /* SunsetState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0000102000 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A000000C000 /* WakeLightAPI.swift */,
+				A000000D000 /* DeviceDiscovery.swift */,
+				A000000E000 /* AppState.swift */,
+				A0000017000 /* PhoneConnectivityManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A0000103000 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0000002000 /* ContentView.swift */,
+				A0000003000 /* LightControlView.swift */,
+				A0000004000 /* AlarmsView.swift */,
+				A0000005000 /* AlarmEditView.swift */,
+				A0000006000 /* SensorsView.swift */,
+				A0000007000 /* SettingsView.swift */,
+				A0000016000 /* SunsetView.swift */,
+				A0000019000 /* ToastView.swift */,
+				A000001A000 /* ErrorBanner.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0000104000 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				A000000F000 /* WakeLightIntents.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		A0000200000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000F0000 /* WakeLight.app */,
+				B0000000000 /* WakeLightWidgetsExtension.appex */,
+				D0000000000 /* WakeLightWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0000100000 /* WakeLightWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				B0000001000 /* WakeLightWidgets.swift */,
+				B0000002000 /* LightToggleWidget.swift */,
+				B0000003000 /* NextAlarmWidget.swift */,
+				B0000004000 /* SensorWidget.swift */,
+				B0000010000 /* Info.plist */,
+				B0000011000 /* WakeLightWidgets.entitlements */,
+			);
+			path = WakeLightWidgets;
+			sourceTree = "<group>";
+		};
+		C0000100000 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C0000001000 /* SharedModels.swift */,
+				C0000002000 /* SharedAPI.swift */,
+				C0000003000 /* Theme.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D0000100000 /* WakeLightWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D0000001000 /* WakeLightWatchApp.swift */,
+				D0000002000 /* ContentView.swift */,
+				D0000101000 /* Views */,
+				D0000008000 /* Assets.xcassets */,
+				D0000010000 /* Info.plist */,
+				D0000011000 /* WakeLightWatch.entitlements */,
+			);
+			path = WakeLightWatch;
+			sourceTree = "<group>";
+		};
+		D0000101000 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0000003000 /* SunsetWatchView.swift */,
+				D0000004000 /* LightWatchView.swift */,
+				D0000005000 /* SensorsWatchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000F0001 /* WakeLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0000040000 /* Build configuration list for PBXNativeTarget "WakeLight" */;
+			buildPhases = (
+				A0000050000 /* Sources */,
+				A0000030000 /* Frameworks */,
+				A0000060000 /* Resources */,
+				A0000020000 /* Embed Foundation Extensions */,
+				A0000021000 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0000009000 /* PBXTargetDependency */,
+				D000000B000 /* PBXTargetDependency */,
+			);
+			name = WakeLight;
+			productName = WakeLight;
+			productReference = A00000F0000 /* WakeLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B00000F0000 /* WakeLightWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0000040000 /* Build configuration list for PBXNativeTarget "WakeLightWidgetsExtension" */;
+			buildPhases = (
+				B0000050000 /* Sources */,
+				B0000030000 /* Frameworks */,
+				B0000060000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WakeLightWidgetsExtension;
+			productName = WakeLightWidgetsExtension;
+			productReference = B0000000000 /* WakeLightWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D00000F0000 /* WakeLightWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0000040000 /* Build configuration list for PBXNativeTarget "WakeLightWatch" */;
+			buildPhases = (
+				D0000050000 /* Sources */,
+				D0000030000 /* Frameworks */,
+				D0000060000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WakeLightWatch;
+			productName = WakeLightWatch;
+			productReference = D0000000000 /* WakeLightWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A00000F0001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B00000F0000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					D00000F0000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A0000070000 /* Build configuration list for PBXProject "WakeLight" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0000000001;
+			productRefGroup = A0000200000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000F0001 /* WakeLight */,
+				B00000F0000 /* WakeLightWidgetsExtension */,
+				D00000F0000 /* WakeLightWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0000060000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0000010001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0000060000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0000060000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0000008001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0000050000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0000001001 /* WakeLightApp.swift in Sources */,
+				A0000002001 /* ContentView.swift in Sources */,
+				A0000003001 /* LightControlView.swift in Sources */,
+				A0000004001 /* AlarmsView.swift in Sources */,
+				A0000005001 /* AlarmEditView.swift in Sources */,
+				A0000006001 /* SensorsView.swift in Sources */,
+				A0000007001 /* SettingsView.swift in Sources */,
+				A0000008001 /* WakeLightDevice.swift in Sources */,
+				A0000009001 /* LightState.swift in Sources */,
+				A000000A001 /* Alarm.swift in Sources */,
+				A000000B001 /* SensorData.swift in Sources */,
+				A000000C001 /* WakeLightAPI.swift in Sources */,
+				A000000D001 /* DeviceDiscovery.swift in Sources */,
+				A000000E001 /* AppState.swift in Sources */,
+				A000000F001 /* WakeLightIntents.swift in Sources */,
+				A0000015001 /* SunsetState.swift in Sources */,
+				A0000016001 /* SunsetView.swift in Sources */,
+				A0000017001 /* PhoneConnectivityManager.swift in Sources */,
+				A0000018001 /* Theme.swift in Sources */,
+				A0000019001 /* ToastView.swift in Sources */,
+				A000001A001 /* ErrorBanner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0000050000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0000001001 /* WakeLightWidgets.swift in Sources */,
+				B0000002001 /* LightToggleWidget.swift in Sources */,
+				B0000003001 /* NextAlarmWidget.swift in Sources */,
+				B0000004001 /* SensorWidget.swift in Sources */,
+				B0000005001 /* SharedModels.swift in Sources */,
+				B0000006001 /* SharedAPI.swift in Sources */,
+				B0000008001 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0000050000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0000001001 /* WakeLightWatchApp.swift in Sources */,
+				D0000002001 /* ContentView.swift in Sources */,
+				D0000003001 /* SunsetWatchView.swift in Sources */,
+				D0000004001 /* LightWatchView.swift in Sources */,
+				D0000005001 /* SensorsWatchView.swift in Sources */,
+				D0000006001 /* SharedModels.swift in Sources */,
+				D0000007001 /* SharedAPI.swift in Sources */,
+				D0000007002 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0000009000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B00000F0000 /* WakeLightWidgetsExtension */;
+			targetProxy = B0000008000 /* PBXContainerItemProxy */;
+		};
+		D000000B000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00000F0000 /* WakeLightWatch */;
+			targetProxy = D000000A000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A0000041000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WakeLight/WakeLight.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TEAM_ID_HERE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WakeLight/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WakeLight;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakelight.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0000042000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WakeLight/WakeLight.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TEAM_ID_HERE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WakeLight/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WakeLight;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakelight.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0000080000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0000090000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0000041000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WakeLightWidgets/WakeLightWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TEAM_ID_HERE;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WakeLightWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WakeLight Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakelight.app.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0000042000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WakeLightWidgets/WakeLightWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TEAM_ID_HERE;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WakeLightWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WakeLight Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakelight.app.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0000041000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WakeLightWatch/WakeLightWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TEAM_ID_HERE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WakeLightWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WakeLight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.wakelight.app;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakelight.app.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		D0000042000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WakeLightWatch/WakeLightWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TEAM_ID_HERE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WakeLightWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WakeLight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.wakelight.app;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wakelight.app.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0000040000 /* Build configuration list for PBXNativeTarget "WakeLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000041000 /* Debug */,
+				A0000042000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0000070000 /* Build configuration list for PBXProject "WakeLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000080000 /* Debug */,
+				A0000090000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0000040000 /* Build configuration list for PBXNativeTarget "WakeLightWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0000041000 /* Debug */,
+				B0000042000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0000040000 /* Build configuration list for PBXNativeTarget "WakeLightWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0000041000 /* Debug */,
+				D0000042000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0000000000 /* Project object */;
+}
